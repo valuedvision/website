@@ -62,6 +62,8 @@ depending on your setup and how you manage users in the system. You will still n
 ```bash
 LDAP_USER_FILTER=(&(sAMAccountName=${user}))
 LDAP_VERSION=3
+# To enable searching the whole subtree:
+LDAP_FOLLOW_REFERRALS=true
 ```
 
 ### LDAP Group Sync
